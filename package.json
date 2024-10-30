@@ -1,0 +1,21 @@
+{
+    "name": "@duckduckgo/eslint-config",
+    "version": "1.0.0",
+    "description": "ESLint shareable config used by several DDG repos",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "eslint": ">= 9"
+    },
+    "dependencies": {
+        "@eslint/js": "^9.13.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-n": "^17.11.1",
+        "eslint-plugin-promise": "^7.1.0"
+    }
+}
