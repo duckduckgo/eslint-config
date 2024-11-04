@@ -46,10 +46,6 @@ export default [
                     "ignoreGlobals": true
                 }
             ],
-            "curly": [
-                "error",
-                "multi-line"
-            ],
             "default-case-last": "error",
             "dot-notation": [
                 "error",
@@ -92,32 +88,6 @@ export default [
                 }
             ],
             "no-lone-blocks": "error",
-            "no-mixed-operators": [
-                "error",
-                {
-                    "groups": [
-                        [
-                            "==",
-                            "!=",
-                            "===",
-                            "!==",
-                            ">",
-                            ">=",
-                            "<",
-                            "<="
-                        ],
-                        [
-                            "&&",
-                            "||"
-                        ],
-                        [
-                            "in",
-                            "instanceof"
-                        ]
-                    ],
-                    "allowSamePrecedence": true
-                }
-            ],
             "no-multi-str": "error",
             "no-new": "error",
             "no-new-func": "error",
@@ -190,10 +160,6 @@ export default [
                 {
                     "disallowRedundantWrapping": true
                 }
-            ],
-            "quote-props": [
-                "error",
-                "as-needed"
             ],
             "spaced-comment": [
                 "error",
