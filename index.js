@@ -14,8 +14,6 @@ export default [
         },
 
         rules: {
-            "indent": ["error", 4],
-
             // revised rules from "standard"
             "no-var": "warn",
             "object-shorthand": [
