@@ -2,9 +2,11 @@ import nodePlugin from "eslint-plugin-n";
 import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
 import js from '@eslint/js';
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
     js.configs.recommended,
+    eslintConfigPrettier,
 
     {
         plugins: {
@@ -14,8 +16,6 @@ export default [
         },
 
         rules: {
-            "indent": ["error", 4],
-
             // revised rules from "standard"
             "no-var": "warn",
             "object-shorthand": [
@@ -45,10 +45,6 @@ export default [
                     "properties": "never",
                     "ignoreGlobals": true
                 }
-            ],
-            "curly": [
-                "error",
-                "multi-line"
             ],
             "default-case-last": "error",
             "dot-notation": [
@@ -92,32 +88,6 @@ export default [
                 }
             ],
             "no-lone-blocks": "error",
-            "no-mixed-operators": [
-                "error",
-                {
-                    "groups": [
-                        [
-                            "==",
-                            "!=",
-                            "===",
-                            "!==",
-                            ">",
-                            ">=",
-                            "<",
-                            "<="
-                        ],
-                        [
-                            "&&",
-                            "||"
-                        ],
-                        [
-                            "in",
-                            "instanceof"
-                        ]
-                    ],
-                    "allowSamePrecedence": true
-                }
-            ],
             "no-multi-str": "error",
             "no-new": "error",
             "no-new-func": "error",
@@ -190,10 +160,6 @@ export default [
                 {
                     "disallowRedundantWrapping": true
                 }
-            ],
-            "quote-props": [
-                "error",
-                "as-needed"
             ],
             "spaced-comment": [
                 "error",
