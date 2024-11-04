@@ -2,9 +2,11 @@ import nodePlugin from "eslint-plugin-n";
 import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
 import js from '@eslint/js';
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
     js.configs.recommended,
+    eslintConfigPrettier,
 
     {
         plugins: {
