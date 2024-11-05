@@ -23,16 +23,24 @@ This is a shared eslint configuration used across several DDG projects.
   ```
 
 ## Prettier is required
-This config disables ESLint formatting rules (through `eslint-config-prettier`), so you are expected to rely on Prettier to do the formatting. Make sure you have Prettier set up in your project.
+This config disables ESLint formatting rules (through [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier/)), so you are expected to rely on [Prettier](https://prettier.io/) to do the formatting. Make sure you have Prettier set up in your project.
+Currently we don't have a shared Prettier config, but we recommend using this one:
+```json
+{
+    "singleQuote": true,
+    "printWidth": 140,
+    "tabWidth": 4
+}
+```
 
 ## ESLint plugins
 This config **already includes** the following plugins, so you don't need to install them explicitly:
-- `eslint-plugin-n`
-- `eslint-plugin-import`
-- `eslint-plugin-promise`
-- `eslint-config-prettier`
+- [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n)
+- [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
+- [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise)
+- [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier/)
 
-It also includes **recommended** configuration from `@eslint/js` (but not for other plugins).
+It also includes **recommended** configuration from [`@eslint/js`](https://www.npmjs.com/package/@eslint/js) (but not for other plugins).
 
 ## TypeScript
-This config does not include TypeScript-specific rules, and does not depend on `typescript-eslint`. The reason for that is that typescript plugin disables some standard JS rules, and this would mess things up for pure-JS projects. If you are using TypeScript, you can add `typescript-eslint` to your project and configure it separately. You can check existing DDG projects for examples.
+This config does not include TypeScript-specific rules, and does not depend on [`typescript-eslint`](https://typescript-eslint.io/). The reason for that is that typescript plugin disables some standard JS rules, and this would mess things up for pure-JS projects. If you are using TypeScript, you can add `typescript-eslint` to your project and configure it separately. You can check existing DDG projects for examples.
