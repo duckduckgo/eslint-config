@@ -34,6 +34,13 @@ jobs:
           echo "Applying label: $LABEL"
           gh pr edit "$PR_URL" --add-label "$LABEL"
 
+      - name: Request review for major updates
+        if: steps.meta.outputs.update-type == 'version-update:semver-major'
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr edit "$PR_URL" --add-reviewer "muodov"
+
       - name: Enable auto-merge for patch & minor updates
         if: steps.meta.outputs.update-type == 'version-update:semver-patch' || steps.meta.outputs.update-type == 'version-update:semver-minor'
         env:
