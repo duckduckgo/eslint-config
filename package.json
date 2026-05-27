@@ -1,6 +1,6 @@
 {
     "name": "@duckduckgo/eslint-config",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "ESLint shareable config used by several DDG repos",
     "main": "index.js",
     "type": "module",
