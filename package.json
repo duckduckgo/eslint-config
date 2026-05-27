@@ -1,14 +1,20 @@
 {
     "name": "@duckduckgo/eslint-config",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "ESLint shareable config used by several DDG repos",
     "main": "index.js",
     "type": "module",
+    "private": true,
     "scripts": {
-        "test": "node scripts/smoke-test.mjs"
+        "test": "node scripts/smoke-test.mjs",
+        "release": "auto shipit"
     },
     "author": "",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/duckduckgo/eslint-config.git"
+    },
     "peerDependencies": {
         "eslint": ">= 9"
     },
@@ -18,5 +24,8 @@
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-n": "^18.0.0",
         "eslint-plugin-promise": "^7.1.0"
+    },
+    "devDependencies": {
+        "auto": "^11.3.6"
     }
 }
