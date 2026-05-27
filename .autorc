@@ -1,5 +1,7 @@
 {
     "baseBranch": "main",
+    "name": "Dax the Deployer",
+    "email": "dax@duckduckgo.com",
     "plugins": [
         [
             "npm",
