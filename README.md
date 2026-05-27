@@ -5,7 +5,7 @@ This is a shared eslint configuration used across several DDG projects.
 ## How to set up your project with this config
 
 - This config is meant to be used with ESLint 9+ AND Prettier, so make sure you are using those in your project.
-- add a dev NPM dependency: `github:duckduckgo/eslint-config#<GIT_COMMIT_OR_TAG>`
+- add a dev NPM dependency: `github:duckduckgo/eslint-config#v0.1.0`
 - in your `eslint.config.js`, import this config and put it in the configuration array. You probably want it after other "recommended" configs, and before project-specific rules.
 
   ```js
