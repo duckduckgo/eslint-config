@@ -5,7 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "node scripts/smoke-test.mjs"
     },
     "author": "",
     "license": "ISC",
@@ -14,9 +14,9 @@
     },
     "dependencies": {
         "@eslint/js": "^9.13.0",
-        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-prettier": "^10.0.0",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-n": "^17.11.1",
+        "eslint-plugin-n": "^18.0.0",
         "eslint-plugin-promise": "^7.1.0"
     }
 }
