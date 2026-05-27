@@ -28,7 +28,7 @@ jobs:
           case "$UPDATE_TYPE" in
             version-update:semver-patch) LABEL=patch ;;
             version-update:semver-minor) LABEL=minor ;;
-            version-update:semver-major) LABEL=major ;;
+            version-update:semver-major) echo "Major update; leaving release label for manual review."; exit 0 ;;
             *) echo "No label for update-type '$UPDATE_TYPE'"; exit 0 ;;
           esac
           echo "Applying label: $LABEL"
