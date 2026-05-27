@@ -1,3 +1,15 @@
+# v0.2.1 (Wed May 27 2026)
+
+#### ⚠️ Pushed to `main`
+
+- don't apply major label to dependabot prs ([@muodov](https://github.com/muodov))
+
+#### Authors: 1
+
+- Maxim Tsoy ([@muodov](https://github.com/muodov))
+
+---
+
 # v0.2.0 (Wed May 27 2026)
 
 #### 🚀 Enhancement
