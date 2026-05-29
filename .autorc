@@ -4,9 +4,9 @@
     "email": "dax@duckduckgo.com",
     "plugins": [
         [
-            "npm",
+            "version-file",
             {
-                "setRcToken": false
+                "versionFile": "VERSION"
             }
         ],
         "released"
