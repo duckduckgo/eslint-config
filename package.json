@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "test": "node scripts/smoke-test.mjs",
-        "release": "node scripts/release.mjs"
+        "release": "auto shipit"
     },
     "author": "",
     "license": "ISC",

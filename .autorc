@@ -3,6 +3,12 @@
     "name": "Dax the Deployer",
     "email": "dax@duckduckgo.com",
     "plugins": [
+        [
+            "npm",
+            {
+                "setRcToken": false
+            }
+        ],
         "released"
     ]
 }
