@@ -89,9 +89,8 @@ export default [
             "no-multi-str": "error",
             "no-new": "error",
             "no-new-func": "error",
-            "no-new-object": "error",
-            "no-new-symbol": "error",
             "no-new-wrappers": "error",
+            "no-object-constructor": "error",
             "no-octal-escape": "error",
             "no-proto": "error",
             "no-return-assign": [
@@ -100,7 +99,6 @@ export default [
             ],
             "no-self-compare": "error",
             "no-sequences": "error",
-            "no-tabs": "error",
             "no-template-curly-in-string": "error",
             "no-throw-literal": "error",
             "no-undef-init": "error",
@@ -157,35 +155,6 @@ export default [
                 "error",
                 {
                     "disallowRedundantWrapping": true
-                }
-            ],
-            "spaced-comment": [
-                "error",
-                "always",
-                {
-                    "line": {
-                        "markers": [
-                            "*package",
-                            "!",
-                            "/",
-                            ",",
-                            "="
-                        ]
-                    },
-                    "block": {
-                        "balanced": true,
-                        "markers": [
-                            "*package",
-                            "!",
-                            ",",
-                            ":",
-                            "::",
-                            "flow-include"
-                        ],
-                        "exceptions": [
-                            "*"
-                        ]
-                    }
                 }
             ],
             "symbol-description": "error",
