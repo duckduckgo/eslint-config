@@ -1,3 +1,5 @@
+> Releases after v0.3.0 are not listed here. See [GitHub Releases](https://github.com/duckduckgo/eslint-config/releases) for release notes.
+
 # v0.3.0 (Tue Sep 29 2026)
 
 #### 🚀 Enhancement
