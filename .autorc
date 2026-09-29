@@ -2,13 +2,11 @@
     "baseBranch": "main",
     "name": "Dax the Deployer",
     "email": "dax@duckduckgo.com",
+    "shipit": {
+        "noChangelog": true
+    },
     "plugins": [
-        [
-            "npm",
-            {
-                "setRcToken": false
-            }
-        ],
+        "git-tag",
         "released"
     ]
 }
