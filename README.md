@@ -4,7 +4,7 @@ This is a shared eslint configuration used across several DDG projects.
 
 ## How to set up your project with this config
 
-- This config is meant to be used with ESLint 9+ AND Prettier, so make sure you are using those in your project.
+- This config is meant to be used with ESLint 10+ AND Prettier, so make sure you are using those in your project.
 - add a dev NPM dependency: `github:duckduckgo/eslint-config#v<version>`
 - in your `eslint.config.js`, import this config and put it in the configuration array. You probably want it after other "recommended" configs, and before project-specific rules.
 
@@ -36,7 +36,6 @@ Currently we don't have a shared Prettier config, but we recommend using this on
 ## ESLint plugins
 This config **already includes** the following plugins, so you don't need to install them explicitly:
 - [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n)
-- [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
 - [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise)
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier/)
 

@@ -1,5 +1,4 @@
 import nodePlugin from "eslint-plugin-n";
-import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
 import js from '@eslint/js';
 import eslintConfigPrettier from "eslint-config-prettier";
@@ -11,7 +10,6 @@ export default [
     {
         plugins: {
             'n': nodePlugin,
-            'import': importPlugin,
             'promise': promisePlugin,
         },
 
@@ -91,9 +89,8 @@ export default [
             "no-multi-str": "error",
             "no-new": "error",
             "no-new-func": "error",
-            "no-new-object": "error",
-            "no-new-symbol": "error",
             "no-new-wrappers": "error",
+            "no-object-constructor": "error",
             "no-octal-escape": "error",
             "no-proto": "error",
             "no-return-assign": [
@@ -102,7 +99,6 @@ export default [
             ],
             "no-self-compare": "error",
             "no-sequences": "error",
-            "no-tabs": "error",
             "no-template-curly-in-string": "error",
             "no-throw-literal": "error",
             "no-undef-init": "error",
@@ -161,35 +157,6 @@ export default [
                     "disallowRedundantWrapping": true
                 }
             ],
-            "spaced-comment": [
-                "error",
-                "always",
-                {
-                    "line": {
-                        "markers": [
-                            "*package",
-                            "!",
-                            "/",
-                            ",",
-                            "="
-                        ]
-                    },
-                    "block": {
-                        "balanced": true,
-                        "markers": [
-                            "*package",
-                            "!",
-                            ",",
-                            ":",
-                            "::",
-                            "flow-include"
-                        ],
-                        "exceptions": [
-                            "*"
-                        ]
-                    }
-                }
-            ],
             "symbol-description": "error",
             "unicode-bom": [
                 "error",
@@ -201,13 +168,6 @@ export default [
             ],
 
             // plugin configs
-            "import/export": "error",
-            "import/first": "error",
-            "import/no-absolute-path": ["error", { "esmodule": true, "commonjs": true, "amd": false }],
-            "import/no-duplicates": "error",
-            "import/no-named-default": "error",
-            "import/no-webpack-loader-syntax": "error",
-
             "n/handle-callback-err": ["error", "^(err|error)$" ],
             "n/no-callback-literal": "error",
             "n/no-deprecated-api": "error",

@@ -16,16 +16,16 @@
         "url": "git+https://github.com/duckduckgo/eslint-config.git"
     },
     "peerDependencies": {
-        "eslint": ">= 9"
+        "eslint": ">= 10"
     },
     "dependencies": {
-        "@eslint/js": "^9.13.0",
-        "eslint-config-prettier": "^10.0.0",
-        "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-n": "^18.0.0",
-        "eslint-plugin-promise": "^7.1.0"
+        "@eslint/js": "^10.0.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-n": "^18.4.0",
+        "eslint-plugin-promise": "^7.3.0"
     },
     "devDependencies": {
-        "auto": "^11.3.6"
+        "auto": "^11.3.6",
+        "eslint": "^10.11.0"
     }
 }
