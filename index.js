@@ -1,5 +1,4 @@
 import nodePlugin from "eslint-plugin-n";
-import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
 import js from '@eslint/js';
 import eslintConfigPrettier from "eslint-config-prettier";
@@ -11,7 +10,6 @@ export default [
     {
         plugins: {
             'n': nodePlugin,
-            'import': importPlugin,
             'promise': promisePlugin,
         },
 
@@ -201,13 +199,6 @@ export default [
             ],
 
             // plugin configs
-            "import/export": "error",
-            "import/first": "error",
-            "import/no-absolute-path": ["error", { "esmodule": true, "commonjs": true, "amd": false }],
-            "import/no-duplicates": "error",
-            "import/no-named-default": "error",
-            "import/no-webpack-loader-syntax": "error",
-
             "n/handle-callback-err": ["error", "^(err|error)$" ],
             "n/no-callback-literal": "error",
             "n/no-deprecated-api": "error",

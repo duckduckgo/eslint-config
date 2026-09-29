@@ -36,7 +36,6 @@ Currently we don't have a shared Prettier config, but we recommend using this on
 ## ESLint plugins
 This config **already includes** the following plugins, so you don't need to install them explicitly:
 - [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n)
-- [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)
 - [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise)
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier/)
 
